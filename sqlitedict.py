@@ -245,7 +245,7 @@ class SqliteMultithread(Thread):
             conn = sqlite3.connect(self.filename, isolation_level=None, check_same_thread=False)
         else:
             conn = sqlite3.connect(self.filename, check_same_thread=False)
-        conn.execute('PRAGMA journal_mode = %s' % self.journal_mode)
+        #conn.execute('PRAGMA journal_mode = %s' % self.journal_mode)
         conn.text_factory = str
         cursor = conn.cursor()
         cursor.execute('PRAGMA synchronous=OFF')
