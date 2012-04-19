@@ -22,7 +22,6 @@ setup(
     name = 'sqlitedict',
     version = '1.0.8-edw1',
     description = 'Persistent dict in Python, backed up by sqlite3 and pickle, multithread-safe.',
-    long_description = read('README.txt'),
 
     py_modules = ['sqlitedict'],
 
